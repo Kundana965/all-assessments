@@ -1,0 +1,28 @@
+Problem statement:- Given a three-digit positive integer. Find the sum and the product of its digits.
+
+this problem is from VJudge- loops- AJ
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int n1=n;
+		int sum=0;
+		int product=1;
+		while(n>0)
+		{
+		    int r=n%10;
+		    sum=sum+r;
+		    n=n/10;
+		}
+		while(n1>0)
+		{
+		    int r=n1%10;
+		    product=product*r;
+		    n1=n1/10;
+		}
+		System.out.println(sum+" "+product);	
+	}
+}

@@ -1,0 +1,18 @@
+'''Problem Statement:- Alice buys a toy with a selling price of 100 rupees. There is a discount of x percent on the toy. Find the amount Alice needs to pay for it.
+The problem is from VJudge- Loops- M'''
+  
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		
+		for(int i=0;i<T;i++)
+		{
+		    int x=sc.nextInt();
+		    int d=(x%100);
+		    System.out.println(100-d);
+		}
+	}
+}

@@ -1,0 +1,19 @@
+problem statement:-  n the online judge system, a judge file may include multiple datasets to check whether the submitted program outputs a correct answer for each test case. This task is to practice solving a problem with multiple datasets.
+Write a program which reads an integer x and print it as is. Note that multiple datasets are given for this problem.
+
+this problem is from VJudge- Loops- AW
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int i=1;
+        while(a!=0)
+        {
+            System.out.println("Case "+i+":"+" "+a);
+            i++;
+            a=sc.nextInt();
+        }
+    }
+}
