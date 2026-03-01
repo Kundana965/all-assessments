@@ -1,0 +1,12 @@
+problem statement:- Write a program which prints 1000 "Hello World".
+
+this problem is from VJudge- loops- A
+
+class Main
+{
+	public static void main(String[] args) {
+	    for(int i=0;i<1000;i++)
+            {
+		System.out.println("Hello World");
+             }
+	}
