@@ -1,0 +1,12 @@
+.contactpage{
+    background-image: url("C:\Users\Administrator\Desktop\react\scw\public\images\background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    color: black;
+    text-align: center;
+}
+.contact ul li{
+    color: black;
+}

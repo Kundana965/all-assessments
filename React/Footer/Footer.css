@@ -1,0 +1,23 @@
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.socialmedia{
+    text-align: left;
+}
+#link{
+    list-style-type: none;
+    text-decoration: none;
+    
+    
+}
+.quicklinks{
+    display: flex;
+    text-align: center;
+    padding-left: 400px;
+}
+#link:hover{
+    text-decoration: underline;
+}

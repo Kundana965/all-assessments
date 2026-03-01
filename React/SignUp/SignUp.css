@@ -1,0 +1,18 @@
+.signup form{
+    border-style: dashed;
+    padding: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+.signup h1{
+    text-align: center;
+}
+.signup{
+    background-image: url("C:\Users\Administrator\Desktop\react\scw\public\images\background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: black;
+}

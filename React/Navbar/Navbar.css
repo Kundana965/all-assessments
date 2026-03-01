@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    background-color: black;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    padding-left: 100px;
+    padding-top: 10px;
+    color: white;
+    
+}
+#logo{
+    width: 170px;
+    height: 70px;
+    padding-right: 200px;
+    padding-left: 60px;
+}
+#home{
+    text-decoration: none;
+}
+#home:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#about{
+    text-decoration: none;
+}
+#about:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#contact{
+    text-decoration: none;
+}
+#contact:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#login{
+    text-decoration: none;
+}
+#login:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#signup{
+    text-decoration: none;
+}
+#signup:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
