@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .nav{
+            display: flex;
+            background-color: rgb(183, 179, 179);
+        }
+        .navigation{
+            padding-top: 30px;
+        }
+        .contactus{
+            background-color: rgb(120, 72, 72);
+            width: 250px;
+            height: 250px;
+            padding:50px
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <figure>
+                <img src="/logo.png" style="width:150px; height:30px">
+            </figure>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="/home.html">HOME</a>
+                <a href="/doctors.html">DOCTORS</a>
+                <a href="/appointments.html">APPOINTMENTS</a>
+                <a href="/about.html">ABOUT</a>
+                <a href="/contact.html">CONTACT</a>
+                <a href="/login.html">LOGIN/SIGNUP</a>
+            </nav>
+        </div>
+    </div>
+    <div class="contact">
+        <h3>Contact</h3><br>
+        <div class="contactus">
+            Name:<input type="text" placeholder="enter your name" required>
+            <br>Email:<input type="email" placeholder="enter your email address" required><br>
+            Message:<input type="text" placeholder="message"><br>
+            <button onclick="contact()">Contact</button>
+        </div>
+    </div>
+</body>
+</html>

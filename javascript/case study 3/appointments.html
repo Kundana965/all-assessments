@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <style>
+        .nav{
+            display: flex;
+            background-color: rgb(183, 179, 179);
+        }
+        .navigation{
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <figure>
+                <img src="/logo.png" style="width:150px; height:30px">
+            </figure>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="/home.html">HOME</a>
+                <a href="/doctors.html">DOCTORS</a>
+                <a href="/appointments.html">APPOINTMENTS</a>
+                <a href="/about.html">ABOUT</a>
+                <a href="/contact.html">CONTACT</a>
+                <a href="/login.html">LOGIN/SIGNUP</a>
+            </nav>
+        </div>
+    </div>
+    <h3>BOOK APPOINTMENT</h3>
+    <div class="appointment">
+        Patient Name: <input type="text" placeholder="Enter patient name" id="pname" required><br>
+        Select Doctor: <select required>
+            <option value="">----select doctor----</option>
+            <option value="roshini">S.Roshini</option>
+            <option value="deepika">Y.Deepika</option>
+            <option value="kundana">K.Kundana</option>
+        </select><br>
+        Select Date: <input type="date" id="date" required><br>
+        Select Time: <input type="time" id="time" required><br>
+        Reason/Notes: <input type="text"placeholder="enter reason" required><br>
+        <button onclick="">Book</button>
+
+    </div>
+</body>
+</html>
