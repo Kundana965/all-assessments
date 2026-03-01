@@ -1,0 +1,40 @@
+<!-- template.html – copy the structure to all pages and change only <main> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartRetail</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body data-page="billing">
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SmartRetail</div>
+    <nav>
+      <a href="/index.html" data-page="home">Home</a>
+      <a href="/products.html" data-page="products">Products</a>
+      <a href="/cart.html" data-page="cart">Cart</a>
+      <a href="/about.html" data-page="about">About Us</a>
+      <a href="/contact.html" data-page="contact">Contact</a>
+    </nav>
+    <div class="auth-buttons">
+      <a href="/login.html" id="loginLink">Login</a>
+      <a href="/signup.html" id="signupLink">Signup</a>
+      <button id="logoutBtn" class="hidden">Logout</button>
+    </div>
+  </header>
+  <main>
+    <h2>Billing</h2>
+    <div id="billSummary"></div>
+    <button class="btn" id="printBtn">Print Bill</button>
+  </main>
+  <footer class="footer">
+    <p>SmartRetail, Kadapa, Andhra Pradesh</p>
+    <p>Email: support@smartretail.com | Phone: +91-99999-99999</p>
+    <p>&copy; 2026 SmartRetail</p>
+  </footer>
+</body>
+
+  <script src="/app.js"></script>
+
+</html>
