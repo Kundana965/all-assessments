@@ -1,0 +1,192 @@
+create database day1;
+
+create table intern(
+sno int,
+sname varchar(20)
+);
+
+insert into intern values( 1,"kundana");
+insert into intern values( 2, "roshini");
+insert into intern values( 3,"deepika");
+insert into intern values( 4, "mahitha");
+
+select * from intern;
+
+create table product(
+pid int,
+cost int,
+manufacturer_name varchar(40),
+manufactured_date date
+);
+
+insert into product values(1, 1000, "kundana", "2005-06-09");
+
+select * from product;
+
+
+create table employee2(
+eid int primary key,
+ename  varchar(20) NOT NULL,
+salary int,
+bg varchar(5) default "O+ve",
+age int check(age between 18 and 60),
+email varchar(30) unique
+);
+desc employee2;
+
+create table bloodgroup1(
+bgid int primary key,
+bgname varchar(10)
+);
+
+insert into bloodgroup1 values(1,"o+ve");
+insert into bloodgroup1 values(2,"o-ve");
+insert into bloodgroup1 values(3,"b+ve");
+insert into bloodgroup1 values(4,"b-ve");
+
+create table state1(
+stateid int primary key,
+statename varchar(10)
+);
+
+ALTER TABLE state1 MODIFY statename VARCHAR(20);
+
+INSERT INTO state1 (stateid, statename) VALUES (1, 'AndhraPradesh');
+INSERT INTO state1 (stateid, statename) VALUES (2, 'ArunachalPradesh');
+INSERT INTO state1 (stateid, statename) VALUES (3, 'Assam');
+INSERT INTO state1 (stateid, statename) VALUES (4, 'Bihar');
+INSERT INTO state1 (stateid, statename) VALUES (5, 'Chhattisgarh');
+INSERT INTO state1 (stateid, statename) VALUES (6, 'Goa');
+INSERT INTO state1 (stateid, statename) VALUES (7, 'Gujarat');
+INSERT INTO state1 (stateid, statename) VALUES (8, 'Haryana');
+INSERT INTO state1 (stateid, statename) VALUES (9, 'HimachalPradesh');
+INSERT INTO state1 (stateid, statename) VALUES (10, 'Jharkhand');
+INSERT INTO state1 (stateid, statename) VALUES (11, 'Karnataka');
+INSERT INTO state1 (stateid, statename) VALUES (12, 'Kerala');
+INSERT INTO state1 (stateid, statename) VALUES (13, 'MadhyaPradesh');
+INSERT INTO state1 (stateid, statename) VALUES (14, 'Maharashtra');
+INSERT INTO state1 (stateid, statename) VALUES (15, 'Manipur');
+INSERT INTO state1 (stateid, statename) VALUES (16, 'Meghalaya');
+INSERT INTO state1 (stateid, statename) VALUES (17, 'Mizoram');
+INSERT INTO state1 (stateid, statename) VALUES (18, 'Nagaland');
+INSERT INTO state1 (stateid, statename) VALUES (19, 'Odisha');
+INSERT INTO state1 (stateid, statename) VALUES (20, 'Punjab');
+INSERT INTO state1 (stateid, statename) VALUES (21, 'Rajasthan');
+INSERT INTO state1 (stateid, statename) VALUES (22, 'Sikkim');
+INSERT INTO state1 (stateid, statename) VALUES (23, 'TamilNadu');
+INSERT INTO state1 (stateid, statename) VALUES (24, 'Telangana');
+INSERT INTO state1 (stateid, statename) VALUES (25, 'Tripura');
+INSERT INTO state1 (stateid, statename) VALUES (26, 'UttarPradesh');
+INSERT INTO state1 (stateid, statename) VALUES (27, 'Uttarakhand');
+INSERT INTO state1 (stateid, statename) VALUES (28, 'WestBengal');
+
+
+create table employe(
+eid int primary key,
+ename varchar(30),
+age int,
+bg int,
+state int,
+foreign key (bg) references bloodgroup1(bgid),
+foreign key (state) references state1(stateid)
+);
+
+insert into employe values(1,"kundana",21,1,1);
+select * from employe;
+
+SELECT e.eid,
+       e.ename,
+       e.age,
+       b.bgname,
+       s.statename
+FROM employe e
+JOIN bloodgroup1 b ON e.bg = b.bgid
+JOIN state1 s ON e.state = s.stateid;
+
+create database day2;
+
+CREATE TABLE patient (
+    pid INT,
+    fname VARCHAR(50),
+    lname VARCHAR(50),
+    age INT,
+    bg VARCHAR(10)
+);
+
+INSERT INTO patient (pid, fname, lname, age, bg) VALUES
+(1, 'madhava', 'reddy', 45, 'o+ve'),
+(2, 'abhinav', 'bandra', 45, 'o-ve'),
+(4, 'hari', 'kiran', 60, 'b-ve'),
+(3, 'madhava', 'kiran', 52, 'o+ve'),
+(5, 'veena', 'kumari', 42, NULL),
+(6, 'k_iran', 'kumar', 39, 'b-ve'),
+(2, 'abhinav', 'bandra', 45, 'o-ve'),
+(7, 'mahes%h', 'nambootri', 36, 'b+ve'),
+(8, 'rahul', 'kumar', 46, 'b-ve'),
+(9, 'bharat', 'kumar', 56, 'b-ve');
+
+select p1.* from patient p1 where 3=( select 
+count(distinct(p2.pid)) from patient p2 where 
+p2.age>p1.age);
+
+CREATE TABLE employeee (
+    eid INT,
+    fname VARCHAR(50),
+    lname VARCHAR(50),
+    age INT,
+    salary INT NULL,
+    dept VARCHAR(20),
+    doj DATE
+);
+
+ INSERT INTO employeee (eid, fname, lname, age, salary, dept, doj) VALUES
+(1, 'rajeev', 'sukla', 23, 12000, '.net', '2011-10-23'),
+ (2, 'sowmya', 'kumari', 23, 19000, 'db', '2010-11-13'),
+(3, 'kishore', 'kumar', 27, 36000, 'android', '2011-10-16'),
+(4, 'abimanyu', 'biswal', 22, NULL, 'android', '2010-02-20'),
+ (5, 'soni', 'kumar', 24, 21800, '.net', '2009-06-21'),
+(6, 'anu', '_singh', 22, 12000, 'db', '2010-10-23'),
+ (7, '_dinesh', 'moh%anty', 23, 15000, '.net', '2009-08-26'),
+(8, 'nishala', '_kumari', 22, 18000, 'db', '2008-07-19'),
+(1, 'rajeev', 'sukla', 23, 12000, '.net', '2011-10-23');
+
+select * from employeee order by age desc;
+
+select distinct * from patient;
+
+select distinct lname from patient;
+
+select * from patient limit 5;
+
+select   * from patient limit 5,2;
+
+select age from employeee where age>20;
+
+select * from patient where age>45 ;
+
+select * from patient where age=42 or age=36 or age=60; 
+
+select * from patient where age in (42,36,60);
+
+select bg from patient group by bg;
+
+select bg from patient group by bg having avg(age)>45;
+
+select bg, count(*) as count from patient group by bg;
+
+select * from employeee where fname like 'a%' ;
+
+select * from employeee where fname like '_a%' ;
+
+select * from employeee where fname like '%a%' ;
+
+select * from employeee where fname like '%a%' order 
+by salary desc;
+
+select * from employeee where fname like 'i%';
+
+select * from employeee where fname like '__i%';
+
+
+
+
