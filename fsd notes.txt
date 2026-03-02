@@ -1,0 +1,866 @@
+day 1
+
+variables
+operators
+datatypes
+simple js program
+age eligibility criteria
+setup vs code
+
+
+let age=18;
+if(age>=18)
+document.write("eligible");
+else
+not eligible
+
+1.Does javascript a programing lang or scripting lang??
+. client-side??
+2. dynamically typed languages???
+3.synchronous in nature means??
+
+console:- helps in debugging.
+
+assignment:
+3 buttons check1,check2,check3
+check1->prints input field data in alert
+check2->prints input field data in console
+check3->prints input field data in browser
+
+
+4. what is TDZ in hoisting?? ->Temporal Dead Zone
+
+---
+
+day 2
+
+eligibility check:
+
+age=int(input())
+if(age>=18):
+ 	print("eligible to vote")
+else:
+ 	print("not eligible to vote")
+---
+
+day 3
+
+functions In js
+tic tac toe game
+ 
+5. declaring a variable outside a function is not able to read inside, why??
+
+6. for loop vs for of loop vs for in loop??
+for in loop -> prints indexes
+for of loop -> prints values
+for loop -> executes a block of code based on the start, end and condition
+
+
+for of:-
+let arr=[1,2,3,4,5];
+for(let b of arr)
+{
+document.writeln(b); -----> 1  2  3  4  5
+}
+
+for in:-
+let arr=[1,2,3,4,5];
+for(let b in arr)
+{
+document.writeln(b);  ------> 0  1  2  3  4
+}
+
+
+for(let b in arr)
+{
+document.writeln(b[a]); ------> 1  2  3  4  5
+}
+
+
+for loop:-
+let arr=[1,2,3,4,5];
+for(let i=0;i<arr.length;i++)
+{
+document.writeln(b[a]);----------> 1  2  3  4  5
+}
+
+7.array literal vs array constructor
+---
+
+day 4
+
+8. can I modify var when it is declared outside the function
+
+let a=[10,20,30,40,50]
+
+for(let x of a)
+{
+x=x+2;
+}
+document.writeln(a);
+
+---
+day 5
+
+
+9. alert vs confirm vs prompt
+
+alert:-
+
+confirm:-
+
+prompt:-
+
+---
+day 6
+
+1.event handling
+2.strings
+3.json
+4.local storage
+
+string functions:
+
+--string.length
+--string.slice
+--string.indexOf
+--string.include
+--string.substr
+--string.substring
+--string.replace
+--string.replaceall
+--string.concat
+--
+
+
+
+objects:
+
+3 ways to declare
+
+10. stringify() vs parse()  in json
+---
+
+day 7
+
+case study 3- clinic management system
+
+---
+
+day 8
+
+React js:
+->component based architecture
+->extension of js
+->single page application
+
+11.Component based architecture:-
+-> a software design approach where applications are built by assembling independent, reusable, and self-contained units called components.
+-> Each component encapsulates a specific functionality or service and communicates with others through well-defined interfaces, much like using LEGO bricks to build a structure.
+
+---
+
+Day 9
+
+12. npx vs npm???
+13. what is virtual dom??
+14.what are fragments???  -> <>.............</>
+
+---
+
+Day 10
+
+Props basics
+
+-> what are props?
+ 	helps data to export from parent component to child component, and provides communication
+-> passing data(parent->child)
+-> props destructuring
+
+---
+
+day 11
+
+
+15.
+16.
+
+bable ->used to convert javascript code into browser runnable code
+
+
+. state
+. Use state
+. event handling
+
+
+-> we can write "export default App" at the last line, or else we can write in the function declaration as "export default function App()"
+
+
+
+17.Number vs ParseInt method
+18. what is configure component
+
+
+
+---
+
+day 12
+
+conditional rendering:-
+->
+
+Lists:-
+
+---
+day 13
+
+browserRouter,Routes, Route
+
+---
+day 14
+
+
+useState ->
+Update ->
+useEffect ->
+useContext
+useReducer
+useMemo
+useRef
+
+
+useState vs useEffect:
+ . useState: When you need to store and update values (e.g., form inputs,counters)
+ . useEffect: When you need to perform actions after render (e.g., API calls, event listeners)
+
+
+
+
+---
+day 15
+
+anchor tag vs link tag in react??
+
+
+API integration:-
+. Fake API
+. Json
+. Backend
+
+
+callback vs promise??
+
+---
+
+day 16
+TYPESCRIPT
+
+
+---
+day 17
+
+?? operator -> It returns the right-hand value if the left-hand value is either null or undefined. Otherwise, it returns the left-hand value.
+
+
+---
+day 18
+
+done tasks on typescript
+
+---
+day 19
+installation of sts->spring tools
+
+
+---
+day 20
+
+
+1.what is oops?
+2. features of oops?
+3. what is meant by datatype? -> it defines the type of the variable
+4.how to take input of primitive data type?
+
+4 features:-
+1.readability
+2.reusability
+3.time complexity
+4.space complexity
+
+
+class-lab1
+
+class Details{
+ 	string name="Arun";
+ 	int age=40;
+ 	string qualification="phd";
+ 	string department="cse";
+}
+
+
+class Nurse{
+string name="vani";
+int age=26;
+string qualification="nursing";
+}
+class Main{
+public static void main(String args[]){
+Nurse nurse=new Nurse();
+sop(nurse.name);
+sop(nurse.age);
+sop(nurse.qualification);
+}
+}
+
+
+
+class Main{
+psvm{
+int a=20;
+if(a>10){sop("hello");}
+else{sop("hi");
+}}
+
+
+C-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int L=sc.nextInt();
+        int B=sc.nextInt();
+        System.out.println(L*B);
+        
+    }
+}
+
+
+
+D-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a+b>c && a+c>b && b+c>a)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+        
+    }
+}
+
+
+F-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N=sc.nextInt();
+        int rev=0;
+        while(N>0)
+        {
+            int r=N%10;
+            rev=rev*10+r;
+            N=N/10;
+        }
+        System.out.println(rev);
+        
+    }
+}
+
+
+H-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int w=sc.nextInt();
+        System.out.println((n%2)?"YES":"NO");
+        
+    }
+}
+
+
+
+L-ATM
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int X=sc.nextInt();
+		float Y=sc.nextFloat();
+		if(X%5==0 && X<Y)
+		{
+		    System.out.println(Y-X-0.50);
+		}
+		else
+		{
+		    System.out.println(Y);
+		}
+		
+	}
+}
+
+
+R-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		
+		for(int i=0;i<T;i++)
+		{
+		    int N=sc.nextInt();
+		    int total=N*50;
+		    System.out.println(total+" "+ (20%total)+" "+ (20%total)+" "+(30%total));
+		}
+	}
+}
+
+
+T-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N1=sc.nextInt();
+		int N2=sc.nextInt();
+		if(N1>N2)
+		{
+		    System.out.println(N1-N2);
+		}
+		else
+		{
+		    System.out.println(N1+N2);
+		}
+		
+		
+	}
+}
+
+
+U-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=nextInt();
+		for(int i=0;i<T;i++)
+		{
+		    int A=sc.nextInt();
+    		int B=sc.nextInt();
+    		int C=sc.nextInt();
+    		if(A>B &&A>C)
+    		{
+    		    if(B>C)
+    		    {
+    		        System.out.println(B);
+    		    }
+    		    else
+    		    {
+    		        System.out.println(C);
+    		    }
+    		}
+    		if(B>A && B>C)
+    		{
+    		    if(A>C)
+    		    {
+    		        System.out.println(A);
+    		    }
+    		    else
+    		    {
+    		        System.out.println(C);
+    		    }
+    		}
+    		if(C>A &&C>B)
+    		{
+    		    if(A>B)
+    		    {
+    		        System.out.println(A);
+    		    }
+    		    else
+    		    {
+    		        System.out.println(B);
+    		    }
+    		}
+		}
+		
+		
+	}
+}
+
+V-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		for(int i=0;i<T;i++)
+		{
+    		int N=sc.nextInt();
+    		if(N<10)
+    		{
+    		    System.out.println("Thanks for helping Chef!");
+    		}
+    		else
+    		{
+    		    System.out.println("-1");
+    		}
+		}
+	}
+}
+
+
+
+W-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		for(int i=0;i<T;i++)
+		{
+    		int N=sc.nextInt();
+    		int count=0;
+    		while(N>0)
+    		{
+    		    int r=N%10;
+    		    if(r==4)
+    		    {
+    		        count++;
+    		    }
+    		    N=N/10;
+    		}
+    		System.out.println(count);
+		}
+	}
+}
+
+X-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int fact=1;
+		for(int i=1;i<=N;i++)
+		{
+    		fact=fact*i;
+		}
+		System.out.println(fact);
+	}
+}
+
+
+
+Y-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int sum=0;
+		for(int i=1;i<=N;i++)
+		{
+    		sum=sum+i;
+		}
+		System.out.println(sum);
+	}
+}
+
+
+
+Z-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int sum=0;
+		for(int i=1;i<=N;i++)
+		{
+    		sum=sum+(i*i);
+		}
+		System.out.println(sum);
+	}
+}
+
+
+AA-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int sum=0;
+		for(int i=1;i<=N;i++)
+		{
+    		sum=sum+(i*i*i);
+		}
+		System.out.println(sum);
+	}
+}
+
+AB-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int power=1;
+		for(int i=1;i<=a;i++)
+		{
+    		power=power*a;
+		}
+		System.out.println(power);
+	}
+}
+
+
+AC-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int fib1=1;
+		int fib2=1;
+		for(int i=0;i<N-2;i++)
+		{
+		    int n=fib1+fib2;
+		    fib1=fib2;
+		    fib2=n;
+		}
+		System.out.println(fib2);
+		
+		
+	}
+}
+
+AD-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int N1=N;
+		int arm=0;
+		while(N>0)
+		{
+		    int r=N%10;
+		    arm=arm+(r*r*r);
+		    N=N/10;
+		}
+		if(arm==N1)
+		{
+		    System.out.println("Yes");
+		}
+		else 
+		{
+		    System.out.println("No");
+		}
+	}
+}
+
+
+AE-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int N1=N;
+		int arm=0;
+		while(N>0)
+		{
+		    int r=N%10;
+		    arm=arm+(r*r*r*r);
+		    N=N/10;
+		}
+		if(arm==N1)
+		{
+		    System.out.println("Yes");
+		}
+		else 
+		{
+		    System.out.println("No");
+		}
+	}
+}
+
+
+AG-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		if(n%2==0)
+		{
+		    System.out.println(n+2);
+		}
+		else
+		{
+		    System.out.println(n+1);
+		}
+		
+	}
+}
+
+
+
+AI-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		if(n<0)
+		{
+		    n=-1*n;
+		}
+		int rev=0;
+		while(n>0)
+		{
+		    int r=n%10;
+		    rev=rev*10+r;
+		    n=n/10;
+		}
+		
+		while(rev>0)
+		{
+		    int r=rev%10;
+		    System.out.println(r);
+		    rev=rev/10;
+		}
+		
+		
+	}
+}
+
+
+AM-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		long n=sc.nextLong();
+		System.out.println((n%2)==0?"Yes":"No");
+		System.out.println((n%4)==0?"Yes":"No");
+		System.out.println((n%8)==0?"Yes":"No");
+	}
+}
+
+
+AP-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        System.out.println((a*a)+(b*b));
+        
+    }
+}
+
+
+
+AX-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        while(x!=0 && y!=0)
+        {
+            if(x>y)
+            {
+                System.out.println(y+" "+x);
+            }
+            else
+            {
+                System.out.println(x+" "+y);
+            }
+            x=sc.nextInt();
+            y=sc.nextInt();
+        }
+    }
+}
+
+
+BI-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N=sc.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(N+"*"+i+"="+(N*i));
+        }
+    }
+}
+
+
+BJ-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N=sc.nextInt();
+        int count=0;
+        for(int i=1;i<N;i++)
+        {
+            if((5*i)<=N)
+            {
+                count++;
+            }
+            if((3*i)<=N)
+            {
+                count++;
+            }
+            if((5*i)>N && (3*i)>N)
+            {
+                break;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
