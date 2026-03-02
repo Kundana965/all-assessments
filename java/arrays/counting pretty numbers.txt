@@ -1,0 +1,34 @@
+problem statement:-Vasya likes the number 239. Therefore, he considers a number pretty if its last digit is 2, 3 or 9.
+Vasya wants to watch the numbers between L and R (both inclusive), so he asked you to determine how many pretty numbers are in this range. Can you help him?
+
+this problem is from vjudge- arrays- Z
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        int[] arr=new int[T];
+        for(int i=0;i<T;i++)
+        {
+            int L=sc.nextInt();
+            int R=sc.nextInt();
+            int count=0;
+            for(int j=L;j<=R;j++)
+            {
+                    if(j%10==2 || j%10==3 || j%10==9)
+                    {
+                        count++;
+                    }
+            }
+            arr[i]=count;
+            count=0;
+        }
+        for(int i=0;i<T;i++)
+        {
+            System.out.println(arr[i]);
+        }
+        
+    }
+}
