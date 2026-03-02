@@ -1,0 +1,11 @@
+problem statement:- concatenation
+
+  public class StringConcatenation {
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = " World";
+        // Using the concat() method or the '+' operator
+        String combined = str1.concat(str2); 
+        System.out.println("The combined string is: " + combined);
+    }
+}
