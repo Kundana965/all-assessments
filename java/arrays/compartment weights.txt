@@ -1,0 +1,51 @@
+problem statement:- Good’s Train is a train which carry weights like grains, vegetables, and many other things in it.
+You are given a task to add weights in each compartment of this good’s train. Initially train compartments may or may not be empty, and you will be given
+q task, in each task you will be provided with 3 data stated as below.
+start number of compartment
+end number of compartment
+The weights, that needs to be onboarded in each compartment in the given range.
+After you have completed all your q tasks, you will need to give the total weights that is currently in this Good’s Train.
+
+this problemis from vjudge- Arrays- X
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        long[] sums=new long[T];
+        for(int i=0;i<T;i++)
+        {
+            int N=sc.nextInt();
+            long[] arr=new long[N];
+            for(int j=0;j<N;j++)
+            {
+                arr[j]=sc.nextInt();
+            }
+            int Q=sc.nextInt();
+            for(int k=0;k<Q;k++)
+            {
+                int S=sc.nextInt();
+                int E=sc.nextInt();
+                long W=sc.nextLong();
+                for(int x=S;x<=E;x++)
+                {
+                    arr[x-1]+=W;
+                }
+            }
+            long sum=0;
+            for(int s=0;s<N;s++)
+            {
+                sum+=arr[s];
+            }
+            sums[i]=sum;
+            
+            
+        }
+        for(int i=0;i<T;i++)
+        {
+            System.out.println(sums[i]);
+        }
+       
+    }
+}
