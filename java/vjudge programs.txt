@@ -1,0 +1,771 @@
+C-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int L=sc.nextInt();
+        int B=sc.nextInt();
+        System.out.println(L*B);
+        
+    }
+}
+
+
+
+D-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a+b>c && a+c>b && b+c>a)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+        
+    }
+}
+
+
+F-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N=sc.nextInt();
+        int rev=0;
+        while(N>0)
+        {
+            int r=N%10;
+            rev=rev*10+r;
+            N=N/10;
+        }
+        System.out.println(rev);
+        
+    }
+}
+
+
+H-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int w=sc.nextInt();
+        System.out.println((n%2)?"YES":"NO");
+        
+    }
+}
+
+
+
+L-ATM
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int X=sc.nextInt();
+		float Y=sc.nextFloat();
+		if(X%5==0 && X<Y)
+		{
+		    System.out.println(Y-X-0.50);
+		}
+		else
+		{
+		    System.out.println(Y);
+		}
+		
+	}
+}
+
+
+R-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		
+		for(int i=0;i<T;i++)
+		{
+		    int N=sc.nextInt();
+		    int total=N*50;
+		    System.out.println(total+" "+ (20%total)+" "+ (20%total)+" "+(30%total));
+		}
+	}
+}
+
+
+T-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N1=sc.nextInt();
+		int N2=sc.nextInt();
+		if(N1>N2)
+		{
+		    System.out.println(N1-N2);
+		}
+		else
+		{
+		    System.out.println(N1+N2);
+		}
+		
+		
+	}
+}
+
+
+U-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=nextInt();
+		for(int i=0;i<T;i++)
+		{
+		    int A=sc.nextInt();
+    		int B=sc.nextInt();
+    		int C=sc.nextInt();
+    		if(A>B &&A>C)
+    		{
+    		    if(B>C)
+    		    {
+    		        System.out.println(B);
+    		    }
+    		    else
+    		    {
+    		        System.out.println(C);
+    		    }
+    		}
+    		if(B>A && B>C)
+    		{
+    		    if(A>C)
+    		    {
+    		        System.out.println(A);
+    		    }
+    		    else
+    		    {
+    		        System.out.println(C);
+    		    }
+    		}
+    		if(C>A &&C>B)
+    		{
+    		    if(A>B)
+    		    {
+    		        System.out.println(A);
+    		    }
+    		    else
+    		    {
+    		        System.out.println(B);
+    		    }
+    		}
+		}
+		
+		
+	}
+}
+
+V-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		for(int i=0;i<T;i++)
+		{
+    		int N=sc.nextInt();
+    		if(N<10)
+    		{
+    		    System.out.println("Thanks for helping Chef!");
+    		}
+    		else
+    		{
+    		    System.out.println("-1");
+    		}
+		}
+	}
+}
+
+
+
+W-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		for(int i=0;i<T;i++)
+		{
+    		int N=sc.nextInt();
+    		int count=0;
+    		while(N>0)
+    		{
+    		    int r=N%10;
+    		    if(r==4)
+    		    {
+    		        count++;
+    		    }
+    		    N=N/10;
+    		}
+    		System.out.println(count);
+		}
+	}
+}
+
+X-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int fact=1;
+		for(int i=1;i<=N;i++)
+		{
+    		fact=fact*i;
+		}
+		System.out.println(fact);
+	}
+}
+
+
+
+Y-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int sum=0;
+		for(int i=1;i<=N;i++)
+		{
+    		sum=sum+i;
+		}
+		System.out.println(sum);
+	}
+}
+
+
+
+Z-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int sum=0;
+		for(int i=1;i<=N;i++)
+		{
+    		sum=sum+(i*i);
+		}
+		System.out.println(sum);
+	}
+}
+
+
+AA-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int sum=0;
+		for(int i=1;i<=N;i++)
+		{
+    		sum=sum+(i*i*i);
+		}
+		System.out.println(sum);
+	}
+}
+
+AB-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int power=1;
+		for(int i=1;i<=a;i++)
+		{
+    		power=power*a;
+		}
+		System.out.println(power);
+	}
+}
+
+
+AC-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int fib1=1;
+		int fib2=1;
+		for(int i=0;i<N-2;i++)
+		{
+		    int n=fib1+fib2;
+		    fib1=fib2;
+		    fib2=n;
+		}
+		System.out.println(fib2);
+		
+		
+	}
+}
+
+AD-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int N1=N;
+		int arm=0;
+		while(N>0)
+		{
+		    int r=N%10;
+		    arm=arm+(r*r*r);
+		    N=N/10;
+		}
+		if(arm==N1)
+		{
+		    System.out.println("Yes");
+		}
+		else 
+		{
+		    System.out.println("No");
+		}
+	}
+}
+
+
+AE-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int N1=N;
+		int arm=0;
+		while(N>0)
+		{
+		    int r=N%10;
+		    arm=arm+(r*r*r*r);
+		    N=N/10;
+		}
+		if(arm==N1)
+		{
+		    System.out.println("Yes");
+		}
+		else 
+		{
+		    System.out.println("No");
+		}
+	}
+}
+
+
+AG-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		if(n%2==0)
+		{
+		    System.out.println(n+2);
+		}
+		else
+		{
+		    System.out.println(n+1);
+		}
+		
+	}
+}
+
+
+
+AI-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		if(n<0)
+		{
+		    n=-1*n;
+		}
+		int rev=0;
+		while(n>0)
+		{
+		    int r=n%10;
+		    rev=rev*10+r;
+		    n=n/10;
+		}
+		
+		while(rev>0)
+		{
+		    int r=rev%10;
+		    System.out.println(r);
+		    rev=rev/10;
+		}
+		
+		
+	}
+}
+
+
+AM-
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		long n=sc.nextLong();
+		System.out.println((n%2)==0?"Yes":"No");
+		System.out.println((n%4)==0?"Yes":"No");
+		System.out.println((n%8)==0?"Yes":"No");
+	}
+}
+
+
+AP-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        System.out.println((a*a)+(b*b));
+        
+    }
+}
+
+
+
+AX-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        while(x!=0 && y!=0)
+        {
+            if(x>y)
+            {
+                System.out.println(y+" "+x);
+            }
+            else
+            {
+                System.out.println(x+" "+y);
+            }
+            x=sc.nextInt();
+            y=sc.nextInt();
+        }
+    }
+}
+
+
+BI-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N=sc.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(N+"*"+i+"="+(N*i));
+        }
+    }
+}
+
+
+BJ-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N=sc.nextInt();
+        int count=0;
+        for(int i=1;i<N;i++)
+        {
+            if((5*i)<=N)
+            {
+                count++;
+            }
+            if((3*i)<=N)
+            {
+                count++;
+            }
+            if((5*i)>N && (3*i)>N)
+            {
+                break;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+----------------------------------------------------------------------------------------------
+
+
+B-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int T=sc.nextInt();
+        for(int i=0;i<T;i++)
+        {
+            int N=sc.nextInt();
+            int product=1;
+            for(int j=0;j<N;j++)
+            {
+                int x=sc.nextInt();
+                product=product*x;
+            }
+            if(product<0)
+            {
+                System.out.println("1");
+            }
+            else
+            {
+                System.out.println("0");
+            }
+        }
+    }
+}
+
+
+H-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int T=sc.nextInt();
+        int count=1;
+        for(int i=0;i<T;i++)
+        {
+            for(int j=0;j<i+1;j++)
+            {
+                System.out.print(count+" ");
+                count++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+I-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int T=sc.nextInt();
+        for(int i=1;i<=T;i++)
+        {
+            int count=i;
+            for(int j=1;j<=i;j++)
+            {
+                if(j==1)
+                {
+                    System.out.print(i+" ");
+                }
+                else
+                {
+                    count=count+(T-j+1);
+                    System.out.print(count+" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+J-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int R=sc.nextInt();
+        int C=sc.nextInt();
+        for(int i=1;i<=C;i++)
+        {
+            for(int j=1;j<=R;j++)
+            {
+                if(i==1 || i==C || j==1 || j==R)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+K-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int R=sc.nextInt();
+        for(int i=1;i<=R;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=1;i<R;i++)
+        {
+            for(int j=R-i;j>=1;j--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+L-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int R=sc.nextInt();
+        for(int i=1;i<=R;i++)
+        {
+            for(int j=R;j>=1;j--)
+            {
+                if(i==j)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(j);
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+
+
+N-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int R=sc.nextInt();
+        for(int i=1;i<=R;i++)
+        {
+            for(int j=R;j>=i;j--)
+            {
+                if(i==1 || i==R || j==R || j==i)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+
+
+P-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int R=sc.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(R+" * "+i+" = "+(R*i));
+        }
+        
+    }
+}
+
+
+
+Y-
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+        for(int i=n-1;i>=0;i--)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(a[i]);
+            if(i!=n-1)
+            {
+                System.out.print(" ");
+            }
+        }
+    }
+}
