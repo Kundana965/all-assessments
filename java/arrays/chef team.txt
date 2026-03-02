@@ -1,0 +1,66 @@
+problem statement:-  Our Chef is hosting a cooking competition in which only two teams can compete at the same time. Both sides should have an equal number of participants to make the competition engaging and fair. Chef was given the duty of forming the two teams as an organizer.
+There are various conditions for forming teams. He will be assigned a number ‘N’ for each competition, and for each divisor ‘D’ of ‘N’ (including 1 and ‘N’ itself), he will add a member:
+
+If ‘D’ is even, go to the first team.
+if ‘D’ is odd, go to the second team.
+Chef needs your assistance with the event planning because he is quite busy. Your job is to advise the chef whether or not he can make two teams with the same amount of members.
+For Example:
+For ‘N’ = 10,
+The divisors are:
+1, 2, 5, 10.
+The first team will have two members corresponding to even divisors 2 and 10.
+The second team will have two members corresponding to odd divisors 1 and 5.
+So, in this case, Chef can make two teams.
+
+this problem is from vjudge - Arrays- U
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int T=sc.nextInt();
+	    for(int i=0;i<T;i++)
+	    {
+	        int N=sc.nextInt();
+	        int[] arr=new int[N+1];
+	        int count=0;
+	        for(int j=1;j<=N;j++)
+	        {
+	            if(N%j==0)
+	            {
+	                arr[count]=j;
+	                count+=1;
+	            }
+	        }
+	        
+	        
+	        int even=0;
+	        int odd=0;
+	        for(int k=0;k<N;k++)
+	        {
+	            if(arr[k]!=0)
+	            {
+	                if(arr[k]%2==0)
+	                {
+	                    even++;
+	                }
+	                else
+	                {
+	                    odd++;
+	                }
+	            }
+	        }
+	        if(even==odd)
+	        {
+	            System.out.println("1");
+	        }
+	        else
+	        {
+	            System.out.println("0");
+	        }
+	    }
+	    
+	}
+}
+
