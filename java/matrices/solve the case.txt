@@ -1,0 +1,52 @@
+problem statement:-  Given a sorted array arr, remove the duplicates from arr such that each element appears only once and display the new array.
+
+this problem is from vjudge- arrays- V
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int T=sc.nextInt();
+	    int[][] newarr=new int[T][20];
+	    for(int i=0;i<T;i++)
+	    {
+	        int N=sc.nextInt();
+	        int[] arr=new int[N];
+	        for(int j=0;j<N;j++)
+	        {
+	            arr[j]=sc.nextInt();
+	        }
+	            for(int j=0;j<N;j++)
+	            {
+	                if(j==0)
+	                {
+	                    newarr[i][j]=arr[j];
+	                    continue;
+	                }
+	                if(arr[j]!=arr[j-1])
+	                {
+	                    newarr[i][j]=arr[j];
+	                    
+	                }
+	            }
+	    }
+	    
+	    for(int i=0;i<T;i++)
+	    {
+	        for(int j=0;j<newarr[i].length;j++)
+	        {
+	            if(j==0 && newarr[i][j]==0)
+	            {
+	                System.out.print(newarr[i][j]+" ");
+	            }
+	            if(newarr[i][j]!=0 )
+	            {
+	                System.out.print(newarr[i][j]+" ");
+	            }
+	        }
+	        System.out.println();
+	    }
+	    
+	}
+}
