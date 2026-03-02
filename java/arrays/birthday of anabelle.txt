@@ -1,0 +1,38 @@
+problem statement:-  Vishal Wants to buy 2 gifts for his best friend whose name is Annabelle(her age is 20), So they both went for shopping in a store. But Annabelle gave, Vishal a condition that she will accept this gifts only when the total price of the gifts is the same as her age times 100.
+The store contains, a list of items whose prices are also displayed, Now Vishal is asking for your help to buy gifts, as he wants to impress Annabelle this time.
+Note: Vishal cannot buy the same item more than once.
+
+this problemis from vjudge- arrays- Y
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        long target1 = 20 * 100; 
+        String[] s1 = new String[T];
+        for (int i = 0; i < T; i++) {
+            long N = sc.nextLong();
+            long arr[] = new long[(int)N];
+            for (int j = 0; j < N; j++) {
+                arr[j] = sc.nextInt();
+            }
+            String s = "Rejected";
+            HashSet<Long> visited=new HashSet<>();
+            for(long a:arr)
+            {
+                long complement=target1-a;
+                if(visited.contains(complement))
+                {
+                    s="Accepted";
+                    break;
+                }
+                visited.add(a);
+            }
+            s1[i] = s;
+        }
+        for (int i = 0; i < T; i++) {
+            System.out.println(s1[i]);
+        }
+    }
+}
