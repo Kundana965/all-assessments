@@ -1,0 +1,33 @@
+problem statement:- Churchill was a kindhearted man, and he wanted to give a cakewalk problem to the coders present, to warm them up.
+ Given an array of N integers, print the product of the numbers present in the array.
+Use appropriate variable types to avoid overflow errors
+
+this problem is from vjudge- arrays- W
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int T=sc.nextInt();
+	    long[] p=new long[T];
+	    for(int i=0;i<T;i++)
+	    {
+	        int N=sc.nextInt();
+	        int arr[]=new int[N];
+	        long product=1;
+	        for(int j=0;j<N;j++)
+	        {
+	            product*=sc.nextInt();
+	        }
+	        
+	        p[i]=product;
+	    }
+	    for(int i=0;i<T;i++)
+	    {
+	        System.out.println(p[i]);
+	    }
+	}
+}
+
+
